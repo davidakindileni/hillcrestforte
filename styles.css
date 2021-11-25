@@ -94,19 +94,15 @@ footer {
 }
 
 button {
- display: block;
- height: 55px;
- border: solid white;
- border-width: 0 10px;
- border-radius: 1;
- background: grey;
- color: gold;
- font-size: 15px;
- /* margin: -60px auto 15px; */
- /* padding: 15px; */
+    /* display: block; */
+    /* border: solid white; */
+    /* border-width: 0 10px; */
+    /* border-radius: 1; */
+    background: grey;
+    color: gold;
+    font-size: 15px;
 }
-
-.social {
+.siteplan, .social {
     height: 55px;
     grid-column: 4/5;
     grid-row: 1/2;
@@ -170,7 +166,7 @@ textarea {
   height: 10em;
 }
 
-button {
+.form_button {
   /* This extra margin represent roughly the same space as the space
      between the labels and their text fields */
   float: right;
