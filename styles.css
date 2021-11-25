@@ -99,6 +99,20 @@ footer {
     font-size: 15px;
 }
 
+.button {
+  border: none;
+  color: white;
+  /* padding: 15px 32px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  /* margin: 4px 2px; */
+  cursor: pointer;
+}
+
+.button1 {background-color: grey;} /* Grey */
+
 .social {
     height: 55px;
     grid-column: 2/5;
@@ -163,12 +177,12 @@ textarea {
   height: 10em;
 }
 
-button {
+.button2 {
   /* This extra margin represent roughly the same space as the space
      between the labels and their text fields */
   float: right;
-  margin-right: 6em;
-  margin-bottom: 50px;
+  margin-right: 5em;
+  margin-bottom: 30px;
 }
 
 #feedback {
