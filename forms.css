@@ -1,14 +1,5 @@
 /* CSS Styles for forms.html */
 
-body {
-  background-color: #cdc8cf;
-  font-family: Helvetica, Tahoma, sans-serif;
-  padding: 5px 25px;
-  font-size: 18px;
-  margin: 0;
-}
-
-
 form {
   /* Center the form on the page */
   margin: 0 auto;
