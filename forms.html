@@ -5,7 +5,7 @@
     <title>My test page</title>
   </head>
   <body>
-    <form action="/my-handling-form-page" method="post">
+    <form action="/my-ContactUs-form-page" method="post">
        <ul>
         <li>
           <label for="fname">First, Other names:</label>
@@ -17,8 +17,10 @@
         </li>
         <li>
           <label for="phone">Telephone:</label>
-          <input type="tel" id="phone" name="phone_no">
-          
+          <input type="tel" id="phone" name="phone_no"
+                 placeholder="0800-123-1234"
+                 pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}">
+          <!-- <small>Format: 123-456-7890</small> -->
         </li>
         <li>
           <label for="mail">E-mail:</label>
@@ -29,7 +31,6 @@
           <textarea id="msg" name="user_message"></textarea>
         </li>
        </ul>
-
     </form>
     <p>This is my page</p>
   </body>
