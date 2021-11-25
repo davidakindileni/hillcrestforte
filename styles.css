@@ -71,6 +71,27 @@ nav ul {
     grid-row: 1 / 2;
 }
 
+.home-content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 1em;
+}
+
+.home-content-left {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.home-content-right {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.home-content-left, .home-content-right {
+    padding: 15px;
+    font-size: 20px;
+}
+
 .gallery-box2 {
     margin: 40px 0px 10px 0px;
     display: grid;
