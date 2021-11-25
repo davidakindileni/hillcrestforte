@@ -72,14 +72,11 @@ textarea {
 
   /* Provide space to type some text */
   height: 10em;
-  color: grey;
-  align: left
-  font-size: 0.5em;
 }
 
 .button {
   /* Align buttons with the text fields */
-  padding-left: 90px; /* same size as the label elements */
+  padding-left: 0px; /* same size as the label elements */
 }
 
 button {
