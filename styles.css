@@ -126,6 +126,12 @@ h3 {
     grid-gap: 1em;
 }
 
+.left-paragraph1, .left-paragraph2, .left-paragraph3, .left-paragraph4,
+.right-paragraph1, .right-paragraph2, .right-paragraph3, .right-paragraph4,
+{
+    background-color: cream;
+    padding-left: 3-px;
+}
 .left-headline1 {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -134,6 +140,7 @@ h3 {
 .left-paragraph1 {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    padding-left: 10px;
 }
 
 .left-headline2 {
@@ -205,7 +212,6 @@ h3 {
     grid-column: 2 / 3;
     grid-row: 8 / 9;
 }
-
 
 footer {
     margin-top: 400px;
