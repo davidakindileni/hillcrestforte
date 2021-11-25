@@ -177,12 +177,18 @@ textarea {
   height: 10em;
 }
 
-.button2 {
+.f-button {
   /* This extra margin represent roughly the same space as the space
      between the labels and their text fields */
-  float: right;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-column: 4 / 5;
+    grid-row: 1/1;
+    /* grid-gap: 1em; */
+  
+  /* float: right;
   margin-right: 5em;
-  margin-bottom: 30px;
+  margin-bottom: 30px; */
 }
 
 #feedback {
