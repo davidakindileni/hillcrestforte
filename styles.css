@@ -88,22 +88,27 @@ h1 {
 }
 
 footer {
+    margin-top: 400px;
     display: grid;
     grid-template-columns: auto 1fr;          
     align-items: center;
     justify-items: end;
 }
 
+.cp-info {
+    font-size: 15px;
+}
+
 .siteplan {
     display: block;
-    /* border: solid white; */
+    border: solid white;
     /* border-width: 0 10px; */
-    /* border-radius: 1; */
+    border-radius: 1;
     background: grey;
     color: gold;
     font-size: 15px;
-    /* height: 55px;
-    grid-column: 3/4;
+    height: 55px;
+    /* grid-column: 3/4;
     grid-row: 1/2; */
 }
 
