@@ -2,6 +2,29 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
 
+#content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body {
+    background-color: #cdc8cf
+    font-family: Helvetica, Tahoma, sans-serif;
+}
+
+header {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 110px auto;        
+}
+
+.logo-box{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 100px 100px 0 0;
+    padding: 0.5em;
+}
+
 body {
   background-color: white;
   font-family: "Open Sans", sans-serif;
@@ -27,6 +50,19 @@ button {
  font-size: 15px;
  /* margin: -60px auto 15px; */
  /* padding: 15px; */
+}
+
+footer {
+    display: grid;
+    grid-template-columns: auto 1fr;          
+    align-items: center;
+    justify-items: end;
+}
+
+.social {
+    height: 55px;
+    grid-column: 4/5;
+    grid-row: 1/2;
 }
 
 
