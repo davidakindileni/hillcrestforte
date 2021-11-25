@@ -296,7 +296,7 @@ footer {
 
 form {
   /* Center the form on the page */
-  margin: 0 auto;
+  margin: 30px auto;
   width: 550px;
   /* Form outline */
   padding: 2em;
