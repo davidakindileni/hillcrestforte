@@ -24,7 +24,7 @@ form {
   margin: 0 auto;
   width: 550px;
   /* Form outline */
-  padding: 1em;
+  padding: 2em;
   border: 1px solid black;
   border-radius: 1em;
 }
@@ -74,16 +74,10 @@ textarea {
   height: 10em;
 }
 
-.button {
-  /* Align buttons with the text fields */
-  padding-left: 90px; /* same size as the label elements */
-}
-
 button {
   /* This extra margin represent roughly the same space as the space
      between the labels and their text fields */
-  margin-left: .5em;
   float: right;
   margin-right: 6em;
-  margin-bottom: 20em;
+  margin-bottom: 50px;
 }
