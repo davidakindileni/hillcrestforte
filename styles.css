@@ -73,7 +73,8 @@ textarea {
   /* Provide space to type some text */
   height: 10em;
   color: grey;
-  
+  align: left
+  font-size: 0.5em;
 }
 
 .button {
