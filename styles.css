@@ -22,10 +22,10 @@ h1 {
 form {
   /* Center the form on the page */
   margin: 0 auto;
-  width: 500px;
+  width: 550px;
   /* Form outline */
   padding: 1em;
-  border: 1px solid #CCC;
+  border: 1px solid black;
   border-radius: 1em;
 }
 
@@ -42,7 +42,7 @@ form li + li {
 label {
   /* Uniform size & alignment */
   display: inline-block;
-  width: 90px;
+  width: 170px;
   text-align: right;
 }
 
@@ -71,7 +71,7 @@ textarea {
   vertical-align: top;
 
   /* Provide space to type some text */
-  height: 5em;
+  height: 10em;
 }
 
 .button {
