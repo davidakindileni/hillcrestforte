@@ -19,18 +19,29 @@
       }
       p, footer {
         font-family: Arial, Helvetica, sans-serif;
-        padding: 0.5em;
+        padding: 0.em;
         margin-bottom: 0.5em;
       }
-      
+      footer {
+        display: grid;
+        grid-template-columns: 50px 50px auto;
+      }
       button{
         font-size: 1em;
       }
+      .viewButton{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+      }
+      .editButton{
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+      }
       span {
-        /* display: table;
-        text-align: right; */
-        float: right;
-        margin-right: 1em;
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+        text-align: right;
+        margin-right: 1.5em;
       }
     </style>
   </head>
