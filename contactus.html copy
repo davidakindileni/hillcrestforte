@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Hillcrest Forte Services Company | Contact Us</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+  <div id="content">
+    <header>
+        <div class="logo-box">
+            <img src="https://cdn.glitch.me/15920e8a-c825-481f-bece-bc4a03687cb1%2FHillcrest_logo_crop.jpg?v=1636224575182" alt="Hillcrest Logo" height="60">
+        </div>
+        <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Our Services</a></li>
+              <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="gallery-box3"> 
+            <img class="gallery-pg3-img1" src= "https://cdn.glitch.com/15920e8a-c825-481f-bece-bc4a03687cb1%2Fphoto-1567427018141-0584cfcbf1b8.jpg?v=1626502947839" alt="Image1" width="940">
+            <img class="gallery-pg3-img2" src= "https://cdn.glitch.com/15920e8a-c825-481f-bece-bc4a03687cb1%2Fistockphoto-483437252-170667a.jpg?v=1626502940202" alt="Image2" width="940">
+        </div>
+        <div class="pg3-grid" >
+            <div class="pg3-content">
+                <section class="pg3-content-center">
+                  <h3>What Next?</h3>
+                  <p>Feeling excited already and wondering what you have to do to enjoy these great services? Simply complete our ‘Contact me” form below, and one of our friendly customer services representatives, assigned specially to you, will get back to you.<br><br>
+                  Thank you for inquiring about our services!
+                  </p>
+                </section>
+            </div>
+            <div id="feedback"></div>
+            <form class="contactform" action="/my-ContactUs-form-page" method="post">
+               <ul>
+                  <li>
+                    <label for="fname">First, Other names:</label>
+                    <input type="text" id="fname" name="f_name" required>
+                  </li>
+                  <li>
+                    <label for="surname">Surname:</label>
+                    <input type="text" id="surname" name="s_name" required>
+                  </li>
+                  <li>
+                    <label for="phone">Telephone:</label>
+                    <input type="tel" id="phone" name="phone_no"
+                           placeholder="0800-123-1234"
+                           pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" required>
+                    <!-- <small>Format: 123-456-7890</small> -->
+                  </li>
+                  <li>
+                    <label for="mail">E-mail:</label>
+                    <input type="email" id="mail" name="user_email" required>
+                  </li>
+                  <li>
+                    <label for="msg">Message:</label>
+                    <textarea placeholder="Enter your message here..." id="msg" name="user_message" required></textarea>
+                  </li>
+                  <li class="f-button">
+                      <button type="submit">Submit</button>
+                  </li>
+               </ul>
+            </form>
+            <script>
+                // get the feedback div element so we can do something with it.
+                const feedbackElement = document.getElementById('feedback');
+                // get the form so we can read what was entered in it.
+                const formElement = document.forms[0];
+                // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+                formElement.addEventListener('submit', function(e) {
+                    // stop the form from doing the default action
+                    e.preventDefault();
+                    // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+                    feedbackElement.innerHTML = 'Hello '+ formElement.fname.value +'! Thank you for your message. We will get back with you as soon as possible!';
+                    // make the feedback element visible.
+                    feedbackElement.style.display = "block";
+                    // add a class to move everything down so our message doesn't cover it.
+                    document.body.classList.toggle('moveDown');
+                });
+            </script>
+        </div>
+          <div>
+            <h3>
+              Our Contact details
+            </h3>
+            <p>
+              Email: hillcrestforteservicescompany@gmail.com <br>
+              Telephone: (234)(0) 803-909-9546, (234)(0) 802-307-6536
+            </p>
+          </div>
+    </main>
+    <footer> 
+        <div class="cp-info">
+            <p><b>&copy; 2023 Hillcrest Forte Services Company</b><p>
+        </div>
+        <div class="social">
+            <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank"> <img class="fb-image" src="https://cdn.glitch.com/66894ae1-1203-4f3a-9ee5-9ba26d1032d5%2Ffacebook.png?1612062065362" width="64" height="64" alt="Facebook icon"></a>
+            <a href="https://twitter.com/" target="_blank"> <img class="tw-image" src="https://cdn.glitch.com/66894ae1-1203-4f3a-9ee5-9ba26d1032d5%2FTwitter.png?1612062074184" width="64" height="64" alt="Twitter icon"></a>
+            <a href="https://www.youtube.com/" target="_blank"> <img class="yt-image" src="https://cdn.glitch.com/66894ae1-1203-4f3a-9ee5-9ba26d1032d5%2Fyoutube.png?1612062077612" width="64" height="64" alt="YouTube icon"></a>
+        </div>
+    </footer>
+  </div>
+</body>
+</html>
